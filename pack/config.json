@@ -1,0 +1,37 @@
+{
+  "menu_settings": {
+    "toggle_key": 161
+  },
+  "PlayerESP": {
+    "Enabled": true
+  },
+  "DecoyESP": {
+    "Enabled": true,
+    "BoxEnabled": true,
+    "ShowName": true,
+    "ShowSnapline": true
+  },
+  "SetName": {
+    "Enabled": false,
+    "PlayerName": ""
+  },
+  "AlwaysVisible": {
+    "Enabled": true
+  },
+  "NoDetection": {
+    "Enabled": true
+  },
+  "AutoDissShadow": {
+    "Enabled": true
+  },
+  "Teleport": {
+    "Enabled": true,
+    "TeleportLocationX": 0.0,
+    "TeleportLocationY": 0.0,
+    "TeleportLocationZ": 0.0
+  },
+  "SprintMultiplier": {
+    "Enabled": false,
+    "SprintMultiplier": 2.0
+  }
+}

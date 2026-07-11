@@ -1,0 +1,10 @@
+#pragma once
+#include "feats/webonly/webonly.h"
+#include "feats/playeresp/playeresp.h"
+#include "feats/decoyesp/decoyesp.h"
+#include "feats/setname/setname.h"
+#include "feats/alwvisible/alwvisible.h"
+#include "feats/autodisshadow/autodisshadow.h"
+#include "feats/teleport/teleport.h"
+#include "feats/sprintmultiplier/sprintmultiplier.h"
+#include "feats/nodetection/nodetection.h"
