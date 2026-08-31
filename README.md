@@ -1,47 +1,50 @@
+EN | [RU](docs/README_RU.md)
+
 # xv_meca
 
-Internal для **Meccha Chameleon** (Steam): ESP, teleport, web-панель, single-exe launcher с embedded DLL.
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 
-**Автор:** xv_Dosha
 
-**Версия игры:** 2.5.0
+Internal for **Meccha Chameleon** (Steam): ESP, teleport, web panel, single-exe launcher with embedded DLL.
+
+**Game version:** 2.5.0
 
 ---
 
-## Структура
+## Structure
 
 ```
-client/          исходники DLL (форк MecchaCheatV + ребренд xv_meca)
-injector/        GUI-лаунчер, embed DLL в exe
+client/          DLL sources (MecchaCheatV fork + xv_meca rebrand)
+injector/        GUI launcher, embed DLL in exe
 build/           CMake + MinGW cross-compile
 pack/            config.json, menu.ini
-release/         готовый билд
+release/         ready build
 scripts/         embed_payload.py, patch_sdk_for_gcc.py, strip_comments.py
-res/             шрифты и ресурсы
+res/             fonts and resources
 ```
 
 ## Release
 
 `release/`:
 
-| Файл | Описание |
+| File | Description |
 |------|----------|
-| `xv_meca.exe` | Лаунчер + инжектор (DLL внутри) |
-| `config.json` | Настройки чита |
-| `menu.ini` | Позиция/размер меню |
+| `xv_meca.exe` | Launcher + injector (DLL inside) |
+| `config.json` | Cheat settings |
+| `menu.ini` | Menu position/size |
 
-### Запуск
+### Launch
 
-1. Steam должен быть установлен.
-2. Запусти `xv_meca.exe`.
-3. Лаунчер стартует **Meccha Chameleon** с `-dx11` и авто-инжектом.
-4. Меню: **INS**, **HOME** или **Right Shift**.
+1. Steam must be installed.
+2. Run `xv_meca.exe`.
+3. The launcher starts **Meccha Chameleon** with `-dx11` and auto-inject.
+4. Menu: **INS**, **HOME**, or **Right Shift**.
 
-Процесс игры: `PenguinHotel-Win64-Shipping.exe`
+Game process: `PenguinHotel-Win64-Shipping.exe`
 
-## Сборка из исходников
+## Build from source
 
-Требуется macOS/Linux с MinGW:
+Requires macOS/Linux with MinGW:
 
 ```bash
 brew install cmake ninja mingw-w64
@@ -49,24 +52,24 @@ cd build
 ./build.sh
 ```
 
-Артефакт: `dist/xv_meca.exe`
+Artifact: `dist/xv_meca.exe`
 
-При сборке `embed_payload.py` вшивает DLL в exe.
+During build, `embed_payload.py` embeds the DLL into the exe.
 
-## Возможности
+## Features
 
 - Player ESP, Decoy ESP
 - Always visible, no detection
 - Auto disable shadow
 - Teleport, sprint multiplier
 - Set name, web-only mode
-- Web-панель (локальный сервер + overlay)
+- Web panel (local server + overlay)
 
-## Безопасность
+## Security
 
-- Секретов в репо нет
-- Кэш сборки и сгенерированный `embedded_payload.*` в `.gitignore`
+- No secrets in the repo
+- Build cache and generated `embedded_payload.*` are in `.gitignore`
 
 ## Disclaimer
 
-Только для образовательных целей. Использование в онлайн-игре — на свой риск.
+For educational purposes only. Use in online games at your own risk.
